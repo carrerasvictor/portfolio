@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Define um layout básico de grade para os componentes */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo para os links de navegação */
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Estilo para o link de navegação ativo */
+nav a.active {
+  font-weight: bold;
+}
+
+/* Estilo para os cabeçalhos das seções */
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilo para as listas de itens */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para os itens da lista */
+li {
+  margin-bottom: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Defina algumas variáveis de cor */
+:root {
+  --primary-color: #4c6ef5;
+  --secondary-color: #555;
+  --text-color: #333;
+}
+
+/* Estilos globais */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom-color: var(--primary-color);
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilize o botão para adicionar um toque de interatividade */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #3953a3;
+}
